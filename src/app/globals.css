@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Apply flex and background properties to ensure layout integrity and no white screen issues */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  /* Prevent vertical overflow when scrolling */
+  overflow-y: auto;
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+}
+
+
+/* Ensure your breadcrumbs are styled consistently */
+.labPage-breadCrumb-color {
+  color: #807a82;
+}
+
+body {
+  overflow-y: scroll; /* Ensure vertical scrolling */
+  overscroll-behavior-y: contain; /* Prevent overscroll */
+}
+body {
+  overscroll-behavior: none; /* Prevent overscroll/bounce */
+}
